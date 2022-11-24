@@ -45,7 +45,7 @@ func readCSV() int {
 	content, err := ioutil.ReadAll(f)
 
 	cntb, err := newFunction(name)
-	r2 := csv.NewReader(strings.NewReader(string(cntb)))
+	r2 := csv.NewReader(strings.NewReader(string(cntb)))////创建csv读取接口
 	ss, _ := r2.ReadAll()
 	sz := len(ss)
 
