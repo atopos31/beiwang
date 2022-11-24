@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	fmt.Println("-----------------欢迎来到hackerxiao的借贷备忘录程序-----------------\n---------->版本 V1.0\n访问我的个人网站----点击 hackerxiao.online\n\n")
+	fmt.Println("------------------欢迎来到hackerxiao的借贷备忘录程序-----------------\n---------->版本 V1.0\n访问我的个人网站----点击 hackerxiao.online\n\n")
 	for true {
 		var i int
 		fmt.Printf("请输入1读取记录，输入2写入记录,输入3新建对象，输入4退出程序\n")
