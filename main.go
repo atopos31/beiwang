@@ -2,11 +2,8 @@ package main
 
 import (
 	"fmt"
-	//"go/build"
 	"os"
 	"strings"
-
-	// "sync"
 	"encoding/csv"
 	"io/ioutil"
 	"strconv"
@@ -43,7 +40,7 @@ func readCSV() int {
 	if name == "0" {
 		return 0
 	}
-	f, _ := os.Open(name)
+	f, _ := os.Open(name)//当我们调用 os.Open()打开一个文件，它会返回一个 os.File 对象，而这个对象其实就是一个 Reader 类型（因为它实现了 Read 函数）：
 	defer f.Close()
 	content, err := ioutil.ReadAll(f)
 
